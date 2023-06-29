@@ -1,0 +1,29 @@
+.stack {
+  grid-area: stack;
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  padding-right: 1rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+
+    filter: grayscale(1.0);
+    transition: 0.3s ease-in-out filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    > img {
+      width: 4rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

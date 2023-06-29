@@ -1,0 +1,16 @@
+.app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "main stack";
+
+  font-family: 'Roboto Mono', monospace;
+}

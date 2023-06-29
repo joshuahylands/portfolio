@@ -1,8 +1,15 @@
-import './App.css';
+import Main from './MainContent';
+import TechStack from './TechStack';
+import Header from './Header';
+import styles from './app.module.scss';
 
 function App() {
   return (
-    <h1>Hello, World!</h1>
+    <div className={styles.app}>
+      <Header/>
+      <Main/>
+      <TechStack/>
+    </div>
   );
 }
 

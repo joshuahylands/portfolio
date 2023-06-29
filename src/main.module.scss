@@ -1,0 +1,27 @@
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  max-width: 60%;
+
+  > ul {
+    list-style: none;
+    padding: 0;
+
+    > li {
+      display: inline;
+      
+      &::before {
+        content: "/";
+        margin-inline: 5px;
+      }
+    }
+  }
+
+  > main {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+}
