@@ -1,9 +1,15 @@
 .stack {
   grid-area: stack;
   display: flex;
-  flex-direction: column;
-  place-self: center;
-  padding-right: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    padding-right: 1rem;
+  }
 
   > div {
     display: flex;

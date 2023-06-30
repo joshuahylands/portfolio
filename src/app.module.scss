@@ -6,11 +6,20 @@
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header"
-    "main stack";
+    "header"
+    "main"
+    "stack";
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header header"
+      "main stack";
+  }
 
   font-family: 'Roboto Mono', monospace;
 }
