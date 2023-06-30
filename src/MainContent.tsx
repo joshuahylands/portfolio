@@ -1,14 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
+
+import NavBar from './NavBar';
+
 import styles from './main.module.scss';
 
 function Main() {
   return (
     <div className={styles.main}>
-      <ul>
-        <li>Projects</li>
-        <li>Radar</li>
-      </ul>
+      <NavBar/>
       <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusamus tempore voluptas ea, quia ipsam expedita amet quasi nesciunt accusantium esse sequi autem adipisci enim magnam dicta atque quo. Debitis.
+        <Routes>
+          <Route path="/" element={<span>Home</span>}/>
+          <Route path="/projects" element={<span>Projects</span>}/>
+          <Route path="/projects/radar" element={<span>Radar</span>}/>
+        </Routes>
       </main>
     </div>
   );
