@@ -1,0 +1,32 @@
+.projects {
+  > h2 {
+    margin: 0;
+    font-weight: 100;
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  > ul {
+    list-style: none;
+    padding: 0;
+
+    > li {
+      padding: 2rem;
+      transition: 0.3s ease-in-out background;
+
+      &:hover {
+        background: #fafafa;
+      }
+    }
+
+    div:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > img {
+        width: 2rem;
+      }
+    }
+  }
+}

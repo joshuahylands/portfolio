@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import NavBar from './NavBar';
+import Projects from './pages/Projects';
 
 import styles from './main.module.scss';
 
@@ -10,9 +11,7 @@ function Main() {
       <NavBar/>
       <main>
         <Routes>
-          <Route path="/" element={<span>Home</span>}/>
-          <Route path="/projects" element={<span>Projects</span>}/>
-          <Route path="/projects/radar" element={<span>Radar</span>}/>
+          <Route path="/" element={<Projects/>}/>
         </Routes>
       </main>
     </div>
