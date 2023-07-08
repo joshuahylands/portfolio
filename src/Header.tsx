@@ -5,7 +5,7 @@ function Header() {
     <header className={styles.header}>
       <h1>JoshuaHylands</h1>
       <nav>
-        <a href="https://github.com/joshuahylands"><img src="/github.svg"/></a>
+        <a href="https://github.com/joshuahylands" target="_blank"><img src="/github.svg"/></a>
       </nav>
     </header>
   );

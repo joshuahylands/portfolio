@@ -19,6 +19,10 @@ function TechStack() {
         <img src="/html5.svg" alt="HMTL5 Logo"/>
         <span>HTML</span>
       </div>
+      <div>
+        <img src="/nodejs.svg" alt="NodeJS Logo"/>
+        <span>NodeJS</span>
+      </div>
     </aside>
   );
 }
