@@ -1,0 +1,65 @@
+.project {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background: #282A36;
+
+  > img {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    background: black;
+    filter: brightness(35%);
+  }
+  
+  > main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h1 {
+      font-weight: 100;
+    }
+
+    > div {
+      display: flex;
+      gap: 1rem;
+
+      > a {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: #275EFE;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease-in-out background;
+  
+        &:hover {
+          background: #1749DB;
+        }
+      }
+    }
+  }
+
+  > footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    > img {
+      max-height: 3rem;
+    }
+  }
+}
