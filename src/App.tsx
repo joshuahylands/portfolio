@@ -28,7 +28,7 @@ function App() {
         <h1>JoshuaHylands</h1>
         <a href="https://github.com/joshuahylands" target="_blank"><img src="/github.svg"/></a>
       </header>
-      <main className={styles.projects} style={{ transform: `translateY(-${projectIndex * 100}vh)` }}>
+      <main className={styles.projects} style={{ transform: `translateY(-${projectIndex * 100}%)` }}>
         {
           projects.map(project => (<Project key={project.name} {...project}/>))
         }
